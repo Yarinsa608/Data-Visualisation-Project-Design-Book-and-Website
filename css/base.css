@@ -12,7 +12,7 @@ body, html {
 }
 
 /* Background image for the hero section */
-header {
+.home-header {
   position: relative;
   height: 100vh;
   background: url('/images/home.png') no-repeat center center/cover;
@@ -78,4 +78,34 @@ header {
   font-size: 1.1rem;
   max-width: 800px;
   margin: 0 auto;
+}
+
+/* Dashboard-specific styles */
+.dashboard-body {
+  background-color: #ffffff;  
+  color: rgb(8, 8, 8);
+  min-height: 100vh;
+}
+
+.dashboard-content {
+  padding: 60px 30px;
+}
+
+.dashboard-content h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.full-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px 40px;
 }
