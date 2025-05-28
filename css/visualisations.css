@@ -10,3 +10,124 @@
   background: white;
   padding: 60px;
 }
+#barchart {
+  max-width: 1000px;
+  margin: 50px auto;
+  background-color: #1b1e3d;
+  padding: 30px;
+  border-radius: 16px;
+  position: relative;
+}
+
+.chart-title {
+  fill: white;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.body {
+  position: absolute;
+  padding: 8px 12px;
+  background: #ffffffdd;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #000;
+  pointer-events: none;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  line-height: 1.4;
+  transition: opacity 0.2s ease;
+}
+
+.tooltip {
+  position: absolute;
+  padding: 8px 12px;
+  background: #ffffffdd;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #000;
+  pointer-events: none;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  line-height: 1.4;
+  transition: opacity 0.2s ease;
+  z-index: 9999;
+}
+
+/* Layout container */
+.row-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+/* Chart card */
+.chart-card {
+  background-color: #2a2f4a;
+  border-radius: 16px;
+  padding: 20px;
+  flex: 1 1 65%;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+/* Sidebar stats column */
+.stats-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1 1 30%;
+}
+
+/* Individual stat cards */
+.stat-card {
+  border-radius: 16px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.stat-card .icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.stat-card .value {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.stat-card .label {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Colors */
+.stat-card.arrests {
+  background-color: #00e5ea;
+  color: #003340;
+}
+
+.stat-card.charges {
+  background-color: #ff8e8e;
+  color: #430000;
+}
+
+/* Chart inside card */
+#barchart svg {
+  width: 100% !important;
+  height: auto;
+}
+#barchart .domain,
+#barchart .tick line {
+  stroke: white;
+}
+
+#barchart .tick text {
+  fill: white;
+}
