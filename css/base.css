@@ -39,13 +39,13 @@ body, html {
 }
 
 .navbar a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Hero text block */
 .hero-text {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 3%;
   background-color: rgba(0, 0, 0, 0.4); /* translucent box */
   padding: 40px 50px;
@@ -61,12 +61,26 @@ body, html {
   font-family: 'Lato', 'Trebuchet MS', sans-serif;
 }
 
+.hero-subtitle {
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: 'Lato', 'Trebuchet MS', sans-serif;
+}
+
 /* Welcome section */
 .intro {
   background: white;
   color: black;
-  padding: 60px 20px;
+  padding: 40px; 
   text-align: center;
+  line-height: 1.8; 
+  max-width: 900px;
+  margin: 60px auto;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .intro h2 {
@@ -76,8 +90,7 @@ body, html {
 
 .intro p {
   font-size: 1.1rem;
-  max-width: 800px;
-  margin: 0 auto;
+  margin-bottom: 20px; 
 }
 
 /* Dashboard-specific styles */
@@ -109,3 +122,57 @@ body, html {
   background-color: rgba(0, 0, 0, 0.9);
   padding: 20px 40px;
 }
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px; 
+  font-size: 0.9rem;
+  background: #111;
+  color: #fff;
+}
+
+/* Learning block inside intro */
+.learning-block {
+  margin-top: 40px;
+  padding: 30px;
+  background-color: #f7f7f7;
+  border-left: 6px solid #444;
+  border-radius: 12px;
+}
+
+.learning-block h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.learning-block ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.05rem;
+}
+
+.learning-block li {
+  margin-bottom: 10px;
+}
+
+.cta {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.cta-button {
+  display: inline-block;  
+  padding: 12px 30px;
+  background-color: #c31818;
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #dddddd;
+}
+
