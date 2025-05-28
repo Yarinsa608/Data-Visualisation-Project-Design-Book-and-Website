@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Australian Road Safety Dashboard</title>
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #e74c3c;
+      --accent: #3498db;
+      --light: #ecf0f1;
+      --dark: #2c3e50;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', 'Arial', sans-serif;
+    }
+    
+    body {
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    .hero-section {
+      background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), 
+                  url('../images/aboutus.jpeg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 2rem 0;
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+
+    .navbar {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    }
+
+    .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    }
+
+    .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    }
+
+    .nav-links a:hover {
+    text-decoration: underline;
+    }
+    
+    .hero-text {
+      padding: 0 5%;
+      margin-top: auto;
+      margin-bottom: 3rem;
+    }
+    
+    .hero-text h3 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+    
+    .hero-text h1 {
+      font-size: 3.5rem;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    
+    .info-section {
+      padding: 5rem 5%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .info-content {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    
+    .info-block {
+      flex: 1;
+    }
+    
+    .info-block h5 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    
+    .info-block h5.orange {
+      color: var(--secondary);
+    }
+    
+    .info-block h2 {
+      font-size: 2.5rem;
+      color: var(--dark);
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+    
+    .info-block h4 {
+      font-size: 1.5rem;
+      color: var(--dark);
+      margin-bottom: 1rem;
+    }
+    
+    .info-block p {
+      color: #666;
+      margin-bottom: 1rem;
+    }
+    
+    @media (max-width: 768px) {
+      .info-content {
+        flex-direction: column;
+      }
+      
+      .hero-text h1 {
+        font-size: 2.5rem;
+      }
+      
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="hero-section">
+    <nav class="navbar">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-text">
+      <h3>ABOUT OUR PROJECT</h3>
+      <h1>Making Australian Roads<br>Safer Through Data</h1>
+    </div>
+  </header>
+
+  <section class="info-section">
+    <div class="info-content">
+      <div class="info-block">
+        <h5>OUR PURPOSE</h5>
+        <h2>Transforming road safety data into actionable insights.</h2>
+      </div>
+      <div class="info-block">
+        <h4>Bridging the Data Gap</h4>
+        <p>While the Bureau of Infrastructure and Transport Research Economics (BITRE) collects comprehensive road safety data, stakeholders often struggle to extract meaningful patterns. Our dashboard makes this data accessible and actionable for policymakers, law enforcement, and the public.</p>
+      </div>
+    </div>
+
+    <div class="info-content">
+      <div class="info-block">
+        <h5 class="orange">OUR MISSION</h5>
+        <h4>Reducing Preventable Traffic Offenses</h4>
+        <p>We visualize key road safety metrics of mobile phone use violations in 2023. Our interactive tools help identify high-risk areas and demographic patterns to inform targeted interventions.</p>
+      </div>
+      <div class="info-block">
+        <h5 class="orange">OUR VISION</h5>
+        <h4>Data-Driven Road Safety Decisions</h4>
+        <p>By transforming complex datasets into clear visualizations, we empower authorities to allocate resources effectively and help the public understand road safety risks in their communities.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
