@@ -1,6 +1,7 @@
 #piechart {
-  max-width: 900px;
-  margin: 40px auto 40px 500px;
+  max-width: 100%; 
+  /*margin: 40px auto 40px 500px;*/
+  flex: 1 1 600px;
   text-align: center;
 }
 
@@ -10,7 +11,22 @@
   background: white;
   padding: 60px;
   max-width: 760px;
+  width: 100%; /* neww for responsive, below one too*/
+  height: auto;
 
+}
+
+/* Responsive layout: stack boxes on small screens */
+@media (max-width: 768px) {
+  #dashboard-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #summary-box,
+  #piechart {
+    width: 90%;
+  }
 }
 
 #barchart {
