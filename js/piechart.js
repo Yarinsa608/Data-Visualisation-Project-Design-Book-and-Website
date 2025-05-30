@@ -44,7 +44,7 @@ const drawPieChart = (data) => {
     .style("font-weight", "bold")
     .style("font-family", "'Poppins', 'Arial', sans-serif")
     .style("fill", "#333")
-    .text("Mobile Phone Fines by Age Group in 2023");
+    .text("Mobile Phone Fines by Age Group");
 
   // Create a group element to hold the pie chart in the middle of the SVG
   const chartGroup = svg.append("g")
