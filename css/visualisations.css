@@ -1,17 +1,17 @@
 #piechart {
   max-width: 100%; 
-  /*margin: 40px auto 40px 500px;*/
   flex: 1 1 600px;
   text-align: center;
 }
 
 .piechart-box {
+  position: relative;
   filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.25));
   border-radius: 20px;
   background: white;
   padding: 60px;
   max-width: 760px;
-  width: 100%; /* neww for responsive, below one too*/
+  width: 100%; 
   height: auto;
 
 }
@@ -27,6 +27,15 @@
   #piechart {
     width: 90%;
   }
+}
+
+/*For the pie chart filter*/
+#month-filter-container {
+  position: absolute;
+  right: 60px;
+  top: 115px;
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-size: 16px;
 }
 
 #barchart {
