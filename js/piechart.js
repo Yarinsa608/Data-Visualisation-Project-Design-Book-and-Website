@@ -28,6 +28,7 @@ const drawPieChart = (data) => {
   // Create SVG
   const svg = container.append("svg")
     .attr("viewBox", `0 0 ${width} ${height}`)
+    .attr("preserveAspectRatio", "xMidYMid meet") // newww for responsive
     .attr("class", "piechart-box");
 
   // Chart title
@@ -43,7 +44,7 @@ const drawPieChart = (data) => {
 
   // Group for pie chart, pushed slightly right
   const chartGroup = svg.append("g")
-    .attr("transform", `translate(${width / 2 + 100}, ${height / 2 + 20})`);
+    .attr("transform", `translate(${width / 2 + 70}, ${height / 2 + 20})`);
 
   // Pie and arc layout
   const pie = d3.pie().value(d => d.totalFines).sort(null);
@@ -97,7 +98,7 @@ const drawPieChart = (data) => {
     .join("text")
     .attr("x", 24)
     .attr("y", (_, i) => i * 25 + 13)
-    .style("font-size", "14px")
+    .style("font-size", "16px")
     .style("font-family", "sans-serif")
     .style("fill", "#333")
     .text(d => {
