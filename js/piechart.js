@@ -1,8 +1,8 @@
 const drawPieChart = (data) => {
   const container = d3.select("#piechart");
-  container.selectAll("*").remove(); // Clear previous pie chart if any
+  container.selectAll("*").remove(); // Clear previous content
 
-  // Aggregate total fines per age group
+  // Add total fines per age group
   const finesByAge = d3.rollups(
     data,
     v => d3.sum(v, d => d.fines),
