@@ -6,18 +6,11 @@ d3.csv("data/piechart_data.csv", d => ({
   year: +d.YEAR,
   month: +d.MONTH
 })).then(data => {
-  fullData = data.filter(d => d.year === 2023); // store filtered 2023 data
+  // Only use 2023 data
+  fullData = data.filter(d => d.year === 2023);
 
-  drawPieChart(fullData); // draw initial chart
-
-  // Add event listener for dropdown
-  d3.select("#monthFilter").on("change", function () {
-    const selected = this.value;
-    const monthFiltered = selected === "all"
-      ? fullData
-      : fullData.filter(d => d.month === +selected);
-    drawPieChart(monthFiltered);
-  });
+  // Set up the dropdown and initial chart
+  setupPieChart(fullData);
 }).catch(error => {
   console.error("Error loading the CSV file:", error);
 });
