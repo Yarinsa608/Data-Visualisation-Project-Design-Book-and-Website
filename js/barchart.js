@@ -73,7 +73,7 @@ function drawBarChart(data) {
         .attr("x", 0)
         .attr("y", -30)
         .attr("class", "chart-title")
-        .text("Fine count by detection method throughout 2023");
+        .text("Fine Count by Detection Method");
 
     // Tooltip appended to <body>, not inside SVG
     const tooltip = d3.select("body")
