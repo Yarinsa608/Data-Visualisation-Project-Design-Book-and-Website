@@ -206,3 +206,67 @@ footer {
   background-color: #dddddd;
 }
 
+/* Data Story Section */
+.data-story {
+  background-color: #2a3a5f;
+  padding: 60px 20px;
+  color: white;
+}
+
+.story-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.data-story h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.story-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  transition: transform 0.3s ease;
+}
+
+.story-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.story-icon {
+  font-size: 1.8rem;
+  color: #47B6FF;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  min-width: 60px;
+  text-align: center;
+}
+
+.story-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.story-content p {
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+.story-card.highlight {
+  background: linear-gradient(135deg, #47B6FF 0%, #9474FF 100%);
+  border-left: 5px solid #ffffff;
+}
+
+.story-card.highlight h3 {
+  font-size: 1.5rem;
+}

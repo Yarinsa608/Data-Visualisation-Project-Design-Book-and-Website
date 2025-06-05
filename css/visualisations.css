@@ -254,3 +254,30 @@
         width: 100%;
       }
     }
+/* Enhanced bar hover effects */
+.bar-segment {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.bar-segment:hover {
+  opacity: 0.9;
+}
+
+/* Drop shadow for SVG elements */
+.drop-shadow {
+  filter: url(#drop-shadow);
+}
+
+.bar-segment {
+  transition: all 0.2s ease;
+  opacity: 0.9; /* Default slightly transparent */
+  cursor: pointer;
+}
+
+.bar-segment:hover {
+  opacity: 1;
+  stroke: white;
+  stroke-width: 1px;
+  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.7));
+}
