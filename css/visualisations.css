@@ -13,7 +13,6 @@
   max-width: 760px;
   width: 100%; 
   height: auto;
-
 }
 
 /* Responsive layout: stack boxes on small screens */
@@ -45,6 +44,7 @@
   padding: 30px;
   border-radius: 16px;
   position: relative;
+  overflow: hidden;
 }
 
 .chart-title {
@@ -163,97 +163,98 @@
 /* Bar chart */
 
 #charts-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      justify-content: center;
-      align-items: flex-start;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+}
 
 .chart-card {
-      background-color: #f4f3f3;
-      border-radius: 20px;
-      padding: 20px;
-      width: 70%;
-      max-width: 1000px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    }
+  background-color: #f4f3f3;
+  border-radius: 20px;
+  padding: 20px;
+  width: 70%;
+  max-width: 1000px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
 
 .chart-card h2 {
-      display: none;
-    }
+  display: none;
+}
 
 #barchart {
-      background-color: #111634;
-      border-radius: 20px;
-      padding: 0;
-      margin: 0;
-      width: 100%;
-      height: auto;
-      overflow: visible;
-    }
+  background-color: #111634;
+  border-radius: 20px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
 
 .stat-boxes {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      width: 250px;
-    }
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 250px;
+}
 
 .stat-box {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border-radius: 16px;
-      padding: 30px;
-      font-weight: bold;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      color: #000;
-      text-align: center;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  padding: 30px;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  color: #000;
+  text-align: center;
+}
 
 .stat-box i {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
+  font-size: 24px;
+  margin-bottom: 10px;
+}
 
 .stat-box .value {
-      font-size: 2.2rem;
-      margin-bottom: 5px;
-    }
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+}
 
 .stat-box .label {
-      font-size: 1rem;
-      font-weight: normal;
-    }
+  font-size: 1rem;
+  font-weight: normal;
+}
 
 .arrest-box {
-      background-color: #1ee3e1;
-      color: #003340;
-    }
+  background-color: #1ee3e1;
+  color: #003340;
+}
 
 .charge-box {
-      background-color: #f89595;
-      color: #430000;
-    }
+  background-color: #f89595;
+  color: #430000;
+}
 
 @media (max-width: 900px) {
-      #charts-wrapper {
-        flex-direction: column;
-        align-items: center;
-      }
+  #charts-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
 
-      .chart-card {
-        width: 90%;
-      }
+  .chart-card {
+    width: 90%;
+  }
 
-      .stat-boxes {
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-      }
-    }
+  .stat-boxes {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
 /* Enhanced bar hover effects */
 .bar-segment {
   transition: all 0.2s ease;
@@ -280,4 +281,24 @@
   stroke: rgb(255, 255, 255);
   stroke-width: 1px;
   filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.7));
+}
+
+/* Legend styles */
+.legend-item text {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .legend-item text {
+    font-size: 0.8em !important;
+  }
+  
+  #barchart {
+    padding: 15px;
+  }
+  
+  .chart-filter {
+    top: 5px !important;
+    right: 5px !important;
+  }
 }
